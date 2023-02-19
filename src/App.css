@@ -1,0 +1,56 @@
+:root {
+  --border-color: #e3e5e4;
+  --background-color: #c3c7ca;
+  --text-color: #34444f;
+}
+ul {
+  list-style-type: none;
+  padding:0;
+  margin:0;
+  width: 250px;
+  margin: auto;
+  /* border: 1px solid var(--border-color); */
+  color: var(--text-color);
+}
+ul li {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: #fff;
+  border: 1px solid var(--border-color);
+}
+
+ul li:not(:last-child) {
+  margin-bottom: 5px;
+}
+ul li > span {
+  width:20px
+}
+ul li .draggable {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: center;
+  justify-content: space-between;
+  width: calc(100% - 90px);
+  padding: 0 15px;
+  height: 60px;
+  cursor: move;
+}
+
+ul li .number {
+  background-color: var(--background-color);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 28px;
+  height: 60px;
+  width: 60px;
+}
+
+ul li .person-name {
+  margin: 0 20px 0 0;
+}
+
+ul li.over {
+  background-color: #eaeaea;
+}
